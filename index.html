@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet"><!--comando importado do google-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <title>Aluno Escritor</title>
+</head>
+
+<body>
+    <header class="cabeçalho"><!--usado esta tag (header) por que ela é semântica o que traz sentido ao sistema-->
+        <div class="container">
+            <input type="checkbox" id="menu"
+                class="container__botao"><!--usando tag (input), implica ao usuario neste processo é para ele interagir -->
+            <label for="menu"><!--esta tag(label) é para associar todo o sistema atraves do (id)-->
+                <span
+                    class="cabeçalho__menu-quadriculas container__imagem"></span><!--usado a tag (span) para que a imagem seja trocada a cor ja que este sistema não java.-->
+            </label>
+            <ul class="lista-menu">
+                <li type="circle" class="lista-menu__titulo">Categorias</li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-1">Quadros</a></li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-2">Musicas</a></li>
+                <li type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-3">Livros</a></li>
+                <h2 class="container__titulo"><b class="container__titulo--negrito">Style</b>Books</h2>
+            </ul>
+            <img src="Icon/SVG/logo-preta.png" alt="Logo do Site"
+                class="logo"><!--esta tag (a) foi usada para colocar a imagem no sistema-->
+            <h2 class="container__titulo"><b class="container__titulo--negrito">Aluno</b>escritor</h2>
+
+        </div>
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão"><!--usando este 
+            comando podemos demonstrar um direcionamento para chegar em algum sistema
+            a (checkbox) coloca uma caixa e deixa para marcar ja (id) faz o direcionamento-->
+            <label for="opções-menu"><!--ja neste comando (label e ele faz a referencia)
+            o que indica que o menu esta nele como esta escrito e a caixa sera marcada-->
+                <ul class="opções__item">Categorias</ul>
+            </label>
+            <ul class="lista-menu">
+                <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-1">Quadros</a></ul>
+                <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-2">Musicas</a></ul>
+                <ul type="circle" class="lista-menu__item"><a href="#" class="lista-menu__link-3">Livros</a></ul>
+            </ul>
+            <ul class="opções__item"><a href="#" class="opções__link">Favoritos</a></ul>
+            <ul class="opções__item"><a href="#" class="opções__link">Escolhas</a></ul>
+        </ul>
+        <div class="container">
+            <a href="#" class="container__link"><img src="Icon/SVG/favorito.png" alt="meus favoritos"
+                    class="container__imagem-1"></a><!--esta tag e as demais para colocar as ancoras ou seja os link de direcionamento-->
+            <a href="#" class="container__link"><img src="Icon/SVG/perfil.png" alt="minhas compras"
+                    class="container__imagem"></a>
+            <p class="container__texto">Perfil</p>
+            <a href="#email" class="container__link"><img src="Icon/SVG/email.png" alt="email"
+                    class="container__imagem"></a>
+            <p class="container__texto">Enviar e-mail</p>
+        </div>
+    </header>
+    </section>
+    <section class="banner">
+        <h2 class="banner__titulo">"<em>Não somos ricos pelo que temos,e sim pelo que não precisamos ter</em> ." (Kant)
+        </h2>
+        <input type="search" class="banner__pesquisa" placeholder="estar entre as estrelas mire na lua">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Memórias</h2>
+        <div class="carrossel__container"> <!-- Esta nova (div) server para fazer a (flex)-->
+            <div class="swiper"><!--comando usado para agregar mudança de tela-->
+                <div class="swiper-pagination"></div><!--comando para fazer a pagina-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="edite" src="img/turma01.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma02.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma03.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma04.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma05.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma06.jpeg"></div>
+                    <div class="swiper-slide"><img class="edite" src="img/turma07.jpeg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div><!--comando para avançar a pagina-->
+                <div class="swiper-button-next"></div><!--comando para retornar a pagina-->
+            </div>
+            <div class="card">
+                <!--primeira linha-->
+                <div class="card_descrição">
+                    <!--primeira coluna-->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Para se eternizar basta ler.</h3>
+                        <h2 class="descrição__titulo-livro">Edgar Allan Poe</h2>
+                        <p class="descrição__texto">"Só eu,só eu amei o amor de meus enganos".</p>
+                    </div>
+                    <!--segunda coluna-->
+                    <iframe width="250" height="300" src="https://www.youtube.com/embed/ZtGeAa242cE?si=TpS2MHTG34_Q5S--"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+                </div>
+                <!--segunda linha-->
+                <div class="card__botões">
+                    <ul class="botões">
+                        <a href="https://www.linkedin.com/in/marco-antônio-a011a4285/" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/marcotsure/" class="fa fa-instagram"></a>
+                    </ul>
+                    <!--segunda linha-->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div><!--Aqui é onde fecha a (div) nova que foi criada para (flex)-->
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulos">Acesse</h2> <!--Este (h2) é o titulo principal da
+         seção e não da pagina não confundir a diferença da pagina e da seção-->
+        <ul class="topicos__listas">
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2017</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2018</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2019</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2020</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2021</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2022</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2023</a>
+            </ul>
+            <ul class="topicos__itens">
+                <a href="#" class="topicos__link">2024</a>
+            </ul>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Mais novidades a caminho</h2>
+            <p class="contato__texto">Um dia sem ler é um dia a mais para seus objetivos.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" id="email">
+    </section>
+    <footer class="rodape">
+        <div class="img__titulo">
+            <img src="Icon/SVG/logo-preta.png" class="logo__footer">
+            <h2 class="rodape__titulo"><i>Aluno escritor</i></h2>
+        </div>
+        <div class="listas__rodape">
+            <ul class="lista-rodape">
+                <ul class="lista-rodape__titulo">Comunicação</ul>
+                <ul class="lista-radape__itens">
+                    <img src="Icon/SVG/livro.png" alt="book">
+                    <a href="#" class="lista-rodape__link">Livro</a>
+                </ul>
+                <ul class="lista-radape__itens">
+                    <img src="Icon/SVG/marcador.png" alt="bookmark">
+                    <a href="#" class="lista-rodape__link">Marcador de páginas</a>
+                </ul>
+                <ul class="lista-radape__itens">
+                    <img src="Icon/SVG/twitter.png" alt="twitter">
+                    <a href="#" class="lista-rodape__link">Twitter</a>
+                </ul>
+            </ul>
+            <ul class="lista-rodape">
+                <ul class="lista-rodape__titulo">Meios</ul>
+                <ul class="lista-radape__itens">
+                    <img src="Icon/SVG/documento.png" alt="document">
+                    <a href="#" class="lista-rodape__link">Documento</a>
+                </ul>
+                <ul class="lista-radape__itens">
+                    <img src="Icon/SVG/aprova.png" alt="Ok">
+                    <a href="#" class="lista-rodape__link">Válido</a>
+                </ul>
+        </div>
+    </footer>
+    </script>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>

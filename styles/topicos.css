@@ -1,0 +1,48 @@
+.topicos{
+    background-color: var(--cor-do-menu-fundo);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.topicos__titulos{
+    color: var(--cor-de--fundo);
+    font-weight: 300;
+    padding: 0.5em 0;
+}
+.topicos__listas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Neste comando (flex-wrap: wrap) ele fez com que a linha quebraçe para baixo igual
+o comando (br) usado no html note que o comando (display: flex) colocou os itens lado 
+a lado ja o segundo comando quebro a linha mas este comando quando chega no final da teal
+ele faz o comando ja o (br) pode ser usado com ou sem o final da tela.*/
+.topicos__link{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 18px;
+    background-color: var(--titulo);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topicos__itens{
+    margin: 2em 0.5em;
+    transition: 300ms;
+}
+
+.topicos__itens:hover, .topicos__link:hover {
+    transform: translateY(-15px);
+    text-decoration: underline;
+}
+
+@media screen and (min-width:808px){
+    .topicos__titulos{
+        font-size: 24px;
+    }
+    .topicos__link{
+        font-size: 20px;
+    }
+}

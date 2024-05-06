@@ -1,0 +1,39 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+
+:root{
+    --cor-de--fundo: #f6f6f6;
+    --cor-do-menu:#000080;
+    --titulo:#006400;
+    --cor-do-menu-fundo: #522700;
+    --link-1:#000;
+    --link-2: #000;
+    --link-3:#000;
+    --fonte-principal:"Fasthand";
+    --fonte-secundaria:"Montserrat";  
+}
+/* Neste lugar é onde podemos atribuir variareis ou seja para cada vez que for usar algo
+aqui pode ser declarado o que indica que não precisa criar varios CSS apenas um que 
+contenha tudo que esta no projeto e claro fonte é usado aqui para poupar tampo (:root)
+é a forma que o CSS aceita as variaveis que estara no projeto. Lembrando que o nome 
+da fonte deve estar no projeto por que se não ela não aplica no caso desta fonte
+se chama ("Fasthand") e sim deve ter as aspas em volta.*/
+body{
+ background-color: var(--cor-de--fundo);
+ font-family: 'Playfair Display', serif;
+ font-size: 16px;
+ font-weight: 400;
+}
+/* Aqui é corpo do projeto note que tudo gira em torno disto quer dizer que quando 
+aplicado o comando(font-family) todo o corpo do projeto vai usar isso logo cada parte
+do projeto tera a mesma fonte claro isso pode ser dividido caso queria uma fonte para
+cada texto mas deve ser declaro no HTML e alocado no (:root), ja no tamanho
+(font-size) isso indica o tamanho não é regra mas sempre é usado (16px) como uso
+ja (font-weight: 400) é o estilo da fonte geralmente é um padrão tambem 
+ .*/
+
+#more {display: none;}

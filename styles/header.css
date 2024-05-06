@@ -1,0 +1,209 @@
+.cabeçalho__menu-quadriculas{
+    width: 60px;
+    height: 60px;
+    background-image: url("../Icon/SVG/menu.svg");
+    background-repeat: no-repeat; 
+    display: inline-block;
+    background-position: center;
+}
+/* Temos a largura (whidth) onde o tamano da unidade esta em (px) a outros tamanho a 
+altura (heigh) foi colocado uma imagem de fundo (background-image), usando o (url)
+quer dizer o digestorio da imagem. note que dentro foi usado (..) isso acelera a 
+localização caso não houvese o icone não seria achado,e para o comando
+(display:inline-block) permite mexer na altura e largura validando o comando,
+o comando(background-repeat: no-repeat; ) não vai permitir que caso venha usa
+o comando (padding) no sistema ela não repita ja o comando
+(background-position: center;) vai centralizar a posição da item ou seja
+ela pode ser alocada atraves disso. */
+.cabeçalho{
+    padding: 10px;
+    background-color:white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}  
+/* usado novamento o comando (background) entretanto foi usado com o comando color
+isso quer dizer que agora o valor do fundo sera alterado quando colcoado o comando (var)
+é de onde saira a cor então ela deve ser criada para ser usada verificar o (style.css)
+o comando (border-radius) serve neste cado para "aparar as pontas" com cada valor ele
+ altera o comando (display: flex) deixa o modelo "livre" ou seja ele pode se adptar a 
+tela como lista lado a lado ou como tabela um abaixo do outro o comando
+(justify-content: space-between) serviu para alocar cada container em espaço.
+o comando(align-items: center) isso vai centralizar cada item na linha sendo assim
+ todos vão estar no mesmo nivel, o comando (position: relative) libera o que esta
+ sendo alocado ou seja libera outros comando como (width) e etc....*/
+.container{
+    display: flex;
+    align-items: center;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 30vw;
+}
+/* este comando (display:none) vai esconder o menu,
+(position: absolute) isso faz com que o elemento seja alterado de posição e que não
+esta estatica.*/
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+/* quando usado este comando (checked) ele varre a lista da (checkbox) que esta no
+html então ele demonstra o que esta la fazendo a abertura do mesmo,(~) isso
+é um combinador então ele vai varrer o comando que esta a apresentado(lista-menu),
+então note o que esta feito no (html) o (lista-menu) com os valores la declarado.*/
+.lista-menu__titulo, 
+.lista-menu__item{
+    padding: 1em;
+    background-color: #f6f6f6;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.lista-menu__item a {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.lista-menu__item a:hover {
+    text-decoration: underline;
+}
+/* Aqui foi colocado uma cor e espçamento no meu interno e note que é possivel
+atribuir dois comando para dois valores nore que o comando apos a chave 
+é estrurar toda a cadei que esta alocado, o que implica que o sistema pode ser 
+redirecionado em que faça muitas linhas de codigos, (text-transform: uppercase),
+faz com que a letras fiquem maiúsculas */
+.lista-menu__titulo{
+    color: var(--titulo);
+}
+/*lembrando que para mudar a cor de (font) usa-se o atributor (color). Note que neste
+comando foi alocado (background-color: var) cor do fundo da fonte 
+(-webkit-text-fill-clip: var) faz com que qualquer navegador aceite a cor 
+(-webkit-text-fill-color: transparent;) deixa o fundo tranparente mas não a fonte
+(background-clip: text) aloca a cor apenas ao que foi. Geralmente usado para cores
+de gradiente. */
+
+
+.lista-menu__link-1{
+    color: var(--link-1);
+    text-decoration:none;
+}
+.lista-menu__link-2{
+    color: var(--link-2);
+    text-decoration:none;
+}
+.lista-menu__link-3{
+    color:var(--link-3);
+    text-decoration:none; 
+}
+/* (text-decoration:none;) retira o marcação abaixo do texto.*/
+.container__botao{
+    display: none;
+}
+/* E usando este comando a pequena caixa selecionada quando clicada some (display: none)
+usando este comando.*/ 
+.container__titulo{
+    font-size: 14px;
+}
+.container__titulo{
+    display: none;
+}
+.opções{
+    display: none;
+}
+.container__texto{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+    opacity: 0.8;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.container__imagem {
+    width: 35px;
+    margin: 20px;
+}
+
+.container__imagem-1 {
+    width: 35px;
+}
+
+.opções__item {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    opacity: 0.8;
+}
+
+.opções__item:hover, .container__texto:hover {
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 808px) {
+    .conatiner__titulo,
+    .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+        color:var(--cor-do-menu-fundo)
+        
+    }
+    .container__texto{
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    .opções{
+        display: flex;
+    }
+    .opções__item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opções__link{
+        text-decoration: none;
+        color: var(--link-1);
+    }
+    .cabeçalho__menu-quadriculas {
+        display: none;
+    }
+    .container__imagem-1{
+        display: none;
+    }
+    .opções__botão:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opções__botão{
+        display: none;
+    }
+}
+ /* neste comando agora tudo estiver dentro 
+dele sera apresentado para a novo tamanho de tela, então sendo assim agora todo o 
+estiver disponivel aqui tomara forma na nova tela ou seja o que foi feito ate agora 
+foi apenas para celular agora sera para tablet.*/
+
+/* img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}*/
+@media screen and (min-width:1024px){
+    .container__link{
+        display: flex;
+        text-align: center;
+        display: block;
+    }
+}
+    

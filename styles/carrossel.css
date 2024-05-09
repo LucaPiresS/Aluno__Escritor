@@ -169,6 +169,7 @@
         margin: 20px;
         box-shadow:-2px 3px 15px 2px rgb(68, 68, 68);
     }
+
     .carrossel__container{
         display: flex;
         align-items: flex-start;

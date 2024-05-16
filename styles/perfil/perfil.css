@@ -1,0 +1,274 @@
+:root{
+    --cor__fundo: #f1f1f1;
+    --cor__elementos: #009688;
+    --cor__fundo__footer: #009688;
+    --boox__shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--cor__fundo);
+}
+
+.container{
+    max-width: 1400px;
+    padding: 0 10px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.work__education { /*tag que edita */ 
+    width: 67%;
+    padding: 0 8px;
+}
+
+i {
+    color: var(--cor__elementos);
+}
+
+/*Começo da estilização da seção sobre*/
+
+.section__sobre {
+    background-color: #fff;
+    width: 33%;
+    height: 90%;
+    box-shadow: var(--boox__shadow);
+}
+
+.infos {
+    padding: 0 16px;
+}
+
+img {
+    width: 100%;
+}
+
+.img__nome {
+    position: relative;
+}
+
+.legenda {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+.nome {
+    opacity: 1;
+}
+
+li {
+    list-style: none;
+    opacity: 0.6;
+}
+ ul {
+    margin: 20px 0;
+ }
+
+.fa { /*edição dos icones*/
+    font-size: 20px;
+}
+
+.icon__info{ /*edta a div que agrupa icone e palavra*/
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin: 16px 0px;
+}
+
+.icon__titulo { /*edta a div que agrupa icone e titulo*/
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin: 10px 0;
+    padding: 16px 0;
+}
+
+.linha {
+    width: 95%;
+    margin: auto;
+    opacity: 0.3;
+}
+
+h3 {
+    opacity: 0.6;
+    margin: 20px 0px 10px;
+}
+
+.barra {
+    width: 95%;
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    margin: 15px 0;
+}
+
+.barra_completada {
+    background-color: var(--cor__elementos);
+    color: #fff;
+    border-radius: 16px;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*cada div altera uma unica barra de progressão, foi necessario todas estas div's pois cada uma tem um valor diferente*/
+
+.barra__90 {
+    width: 90%;
+}
+
+.barra__80 {
+    width: 80%;
+}
+
+.barra__75 {
+    width: 75%;
+}
+
+.barra__50 {
+    width: 50%;
+}
+
+.barra__idioma {
+    height: 22px;
+    width: 50%;
+}
+
+.english {
+    width: 100%;
+}
+
+.spanish {
+    width: 50%;
+}
+
+.german {
+    width: 25%;
+}
+
+/*Fim da estilização da seção sobre*/
+/*Começo da estilização da seção work experience*/
+
+.work__experience {
+    background-color: #fff;
+    padding: 0.1rem 16px;
+    margin-bottom: 16px;
+    box-shadow: var(--boox__shadow);
+}
+
+.fa-suitcase {
+    font-size: 36px;
+}
+
+h1 {
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.trabalhos {
+    padding: 0 16px;
+    margin-top: 40px;
+}
+
+.data {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.data i {
+    margin-right: 16px;
+}
+
+.mes__ano {
+    color: var(--cor__elementos);
+}
+
+span {
+    color: #fff;
+    background-color: var(--cor__elementos);
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.descricao {
+    margin: 20px 0;
+}
+
+/*fim da estilização da seção work experience*/
+/*começo da estilização da seção education*/
+.education {
+    background-color: #fff;
+    padding: 16px;
+    box-shadow: var(--boox__shadow);
+}
+
+.fa-certificate {
+    font-size: 36px;
+}
+
+.escola {
+    padding: 0 16px;
+    margin-top: 40px;
+}
+/*fim da estilização da seção education*/
+/*começo da estilização do footer*/
+
+/*fim da estilização do footer*/
+footer {
+    background-color: var(--cor__fundo__footer);
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 0;
+}
+
+.conteudo__footer {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.texto__footer {
+    color: #fff;
+}
+
+.icones {
+    margin-top: 20px;
+}
+
+.icone__footer {
+    color: #fff;
+    text-decoration: none;
+}
+/*Parte responsiva do site*/
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__sobre, .work__education{
+        width: 90%;
+    }
+
+    .work__experience, .education {
+        padding: 6px 12px;
+    }
+
+}

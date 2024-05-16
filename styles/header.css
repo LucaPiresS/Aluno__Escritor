@@ -147,6 +147,12 @@ usando este comando.*/
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 808px) {
     .conatiner__titulo,
     .container__titulo--negrito{

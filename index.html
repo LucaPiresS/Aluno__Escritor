@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="styles/nav__perfis.css">
+
     <title>Aluno Escritor</title>
 </head>
 
@@ -25,7 +27,7 @@
         <div class="container">
             <input type="checkbox" id="menu"
                 class="container__botao"><!--usando tag (input), implica ao usuario neste processo é para ele interagir -->
-           <!-- <label for="menu"> esta tag(label) é para associar todo o sistema atraves do (id)
+            <!-- <label for="menu"> esta tag(label) é para associar todo o sistema atraves do (id)
                 <span
                     class="cabeçalho__menu-quadriculas container__imagem"></span>usado a tag (span) para que a imagem seja trocada a cor ja que este sistema não java.
             </label>-->
@@ -46,16 +48,37 @@
             <a href="#" class="container__link"><img src="Icon/SVG/favorito.png" alt="meus favoritos"
                     class="container__imagem-1"></a><!--esta tag e as demais para colocar as ancoras ou seja os link de direcionamento-->
 
-                <a href="perfil.html" target="_blank" class="container__link">
-                    <img src="Icon/SVG/perfil.png"
-                    alt="perfil da professora" class="container__imagem">
-                </a><!--este link é o icone de perfil-->
-                        
-                <a href="perfil.html" target="_blank" class="container__texto">Perfil</a><!--e este link é a palavra "perfil"-->
+            <nav class="lista__perfis" id="nav"><!--div responsavel pela lista de perfis-->
+                <p class="bnt__nav" id="btn">></p>
+                <img src="Icon/SVG/perfil.png" alt="perfil da professora" class="container__imagem">
+                <p>perfis:</p>
+
+                <div class="nav__fechada" id="nav__perfis"><!--div que agrupa todos os perfis-->
+                    <div class="img__p"><!--div que agrupa o icone e o nome do perfil, por cuasa da div eles ficam alinhados-->
+                        <a href="perfil.html" target="_blank">
+                            <img src="Icon/SVG/perfil.png" alt="perfil da professora" class="container__imagem">
+                            <a href="perfil.html" target="_blank">Perfl 1</a>
+                        </a>
+                    </div>
+                    <div class="img__p">
+                        <a href="perfil.html" target="_blank">
+                            <img src="Icon/SVG/perfil.png" alt="perfil da professora" class="container__imagem">
+                            <a href="perfil.html" target="_blank">Perfl 2</a>
+                        </a>
+                    </div>
+                    <div class="img__p">
+                        <a href="perfil.html" target="_blank">
+                            <img src="Icon/SVG/perfil.png" alt="perfil da professora" class="container__imagem">
+                            <a href="perfil.html" target="_blank">Perfl 3</a>
+                        </a>
+                    </div>
+                </div>
+            </nav>
 
             <a href="#email" class="container__link"><img src="Icon/SVG/email.png" alt="email"
                     class="container__imagem"></a>
             <p class="container__texto">Enviar e-mail</p>
+
         </div>
     </header>
     </section>
@@ -187,6 +210,7 @@
             },
         });
     </script>
+    <script src="nav.js"></script>
 </body>
 
 </html>

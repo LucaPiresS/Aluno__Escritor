@@ -37,6 +37,7 @@ o comando(align-items: center) isso vai centralizar cada item na linha sendo ass
 .container{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .lista-menu{
     display: none;

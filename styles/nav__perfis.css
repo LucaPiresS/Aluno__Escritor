@@ -1,0 +1,46 @@
+.lista__perfis {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.lista__perfis img {
+    margin: 0 5px;
+}
+
+.bnt__nav {
+    font-weight: bold;
+    font-size: 20px;    
+    transition: 500ms;
+}
+
+.btn__nav__aberta {/*comando que faz uma animação no botão, assim que a div abre, ele mira para baixo*/
+    transform: rotate(90deg);
+}
+
+.nav__fechada { /*estilização básica da div dos perfis*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    position: absolute;
+    top: 40px;
+    left: 13px;
+    background-color: #fff;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: 400ms ease-in;
+}
+
+.nav__fechada.nav__aberta { /*outra parte da estilzação básica da div que agrupa os perfis*/
+    height: 150px; /*comando responsavel pela abertura e fechamneto da div*/
+    border: 1px solid black;
+    border-top: none;
+    box-shadow: 0px 6px 8px rgb(65, 65, 65);
+}
+
+.img__p {
+    display: flex;
+    align-items: center;
+}
